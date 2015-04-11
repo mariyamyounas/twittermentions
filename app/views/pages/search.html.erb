@@ -1,0 +1,8 @@
+<% content_for :title do %>Search<% end %>
+<h3>Search Twitter Mentions</h3>
+
+<%= form_tag("/search", method: "get") do %>
+<%= label_tag(:q, "Search mentions:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
